@@ -1,0 +1,211 @@
+.footer {
+  background: var(--ink-900);
+}
+
+/* CTA Band */
+.ctaBand {
+  background: var(--ink-800);
+  border-top: 1px solid var(--ink-line);
+  border-bottom: 1px solid var(--ink-line);
+  padding: var(--sp-10) 0;
+}
+
+.ctaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-8);
+}
+
+.ctaTitle {
+  font-family: var(--font);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: var(--sp-1);
+}
+
+.ctaSub {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-muted);
+}
+
+.ctaBtns {
+  display: flex;
+  gap: var(--sp-4);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* Main */
+.main {
+  padding: var(--sp-20) 0 var(--sp-12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--sp-12);
+}
+
+/* Brand */
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.logoImg {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.logoName {
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.logoSub {
+  font-family: var(--font);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.tagline {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: var(--sp-4);
+}
+
+.brandDesc {
+  font-size: 0.875rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.75;
+  max-width: 280px;
+  margin-bottom: var(--sp-6);
+}
+
+.socials {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--ink-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-on-dark-muted);
+  transition: border-color var(--t-base), color var(--t-base), background var(--t-base);
+}
+
+.socials a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(240,213,49,0.10);
+}
+
+/* Columns */
+.colTitle {
+  font-family: var(--font);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--ink-line);
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.link {
+  font-size: 0.875rem;
+  color: var(--text-on-dark-muted);
+  transition: color var(--t-fast);
+  display: flex;
+  align-items: center;
+}
+
+.link:hover { color: var(--gold); }
+
+/* Contact list */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+
+.contactIcon { color: var(--gold); margin-top: 1px; flex-shrink: 0; }
+
+.contactLbl {
+  font-family: var(--font);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contactVal {
+  font-size: 0.8125rem;
+  color: var(--text-on-dark-muted);
+  transition: color var(--t-fast);
+}
+
+a.contactItem:hover .contactVal { color: var(--gold); }
+
+/* Bottom */
+.bottom {
+  border-top: 1px solid var(--ink-line);
+  padding: var(--sp-6) 0;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.copyright { font-size: 0.8rem; color: var(--text-on-dark-muted); }
+.credits   { font-size: 0.8rem; color: var(--gold-deep); font-family: var(--font); font-weight: 500; }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .ctaInner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .ctaBtns { flex-direction: column; width: 100%; }
+  .bottomInner { flex-direction: column; text-align: center; }
+}

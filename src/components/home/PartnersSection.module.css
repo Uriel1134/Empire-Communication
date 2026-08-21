@@ -1,0 +1,64 @@
+.section {
+  background: var(--paper);
+  padding: var(--sp-20) 0;
+}
+
+.eyebrow {
+  color: var(--gold-deep) !important;
+  justify-content: center;
+  margin: 0 auto var(--sp-4) !important;
+}
+.eyebrow::before { background: var(--gold) !important; }
+
+.title {
+  font-family: var(--font);
+  font-size: clamp(1.75rem, 2.8vw, 2.375rem);
+  font-weight: 700;
+  color: var(--ink-900);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--sp-12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--sp-4);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  transition: border-color var(--t-base), box-shadow var(--t-base), transform var(--t-base);
+}
+
+.card:hover {
+  border-color: var(--gold-line);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}

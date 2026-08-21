@@ -1,0 +1,115 @@
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--sp-3);
+}
+
+.cell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper-mid);
+  transition: border-color var(--t-base), transform var(--t-base);
+}
+
+.cell:hover {
+  border-color: var(--gold-line);
+  transform: translateY(-2px);
+}
+
+.thumb {
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+.cell:hover .thumb { transform: scale(1.04); }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 480px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: var(--sp-2); }
+}
+
+/* ── Lightbox ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(14,14,11,0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-6);
+}
+
+.close {
+  position: fixed;
+  top: var(--sp-6);
+  right: var(--sp-6);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background var(--t-fast);
+}
+.close:hover { background: var(--gold); color: var(--on-gold); }
+
+.counter {
+  position: fixed;
+  top: var(--sp-7);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-on-dark-muted);
+  letter-spacing: 0.04em;
+}
+
+.nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background var(--t-fast);
+}
+.nav:hover { background: rgba(255,255,255,0.2); }
+.navPrev { left: var(--sp-6); }
+.navNext { right: var(--sp-6); }
+
+.stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  max-height: 82vh;
+}
+
+.stageImg { object-fit: contain; }
+
+@media (max-width: 640px) {
+  .nav { width: 40px; height: 40px; }
+  .navPrev { left: var(--sp-3); }
+  .navNext { right: var(--sp-3); }
+  .close { top: var(--sp-4); right: var(--sp-4); }
+}

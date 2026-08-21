@@ -1,0 +1,24 @@
+.wrap {
+  background: var(--ink-800);
+  border-top: 1px solid var(--ink-line);
+  border-bottom: 1px solid var(--ink-line);
+  padding: var(--sp-5) 0;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.track {
+  will-change: transform;
+}
+
+.item {
+  color: var(--text-on-dark-muted);
+}
+
+.dot {
+  color: var(--gold);
+  margin: 0 var(--sp-6);
+  font-size: 0.8rem;
+}
