@@ -23,7 +23,11 @@ const partners = [
   { name: 'SELODIM',                             file: 'partner-selodim.png' },
   { name: 'PlayList',                            file: 'partner-playlist.png' },
   { name: 'Valteo Ingénierie',                   file: 'partner-valteo-ingenierie.png' },
-  { name: "J'M",                                 file: 'partner-jm.png' },
+  { name: 'Imprimerie PSC',                     file: 'psc sans fond (1).png' },
+  { name: 'Baby Premium',                        file: 'Logo baby premium sans fond.png' },
+  { name: 'MAJ Services',                        file: 'Logo MAJ SERVICES SANS FOND (1).png' },
+  { name: 'CAO Consulting',                      file: 'Logo fond transparent.png' },
+  { name: 'A&S Consulting',                      file: 'partner-as-consulting.svg' },
 ];
 
 export default function PartnersSection() {

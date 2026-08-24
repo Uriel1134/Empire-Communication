@@ -131,8 +131,8 @@ export default function ContactPage() {
                 <Mail size={24} className={styles.emailIcon} />
                 <div>
                   <div className={styles.emailLabel}>Email général</div>
-                  <a href="mailto:contact@empirecommunications.com" className={styles.emailValue}>
-                    contact@empirecommunications.com
+                  <a href="mailto:direction@empirecommunications.com" className={styles.emailValue}>
+                    direction@empirecommunications.com
                   </a>
                 </div>
               </div>
