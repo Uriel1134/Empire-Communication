@@ -34,11 +34,11 @@ export default function ContactCTA() {
                   <div className={styles.contactVal}>+229 01 51 78 33 29</div>
                 </div>
               </a>
-              <a href="mailto:direction@empirecommunications.com" className={styles.contactItem}>
+              <a href="mailto:direction@empirecommunications.org" className={styles.contactItem}>
                 <div className={styles.contactIcon}><Mail size={18} /></div>
                 <div>
                   <div className={styles.contactLbl}>Email</div>
-                  <div className={styles.contactVal}>direction@empirecommunications.com</div>
+                  <div className={styles.contactVal}>direction@empirecommunications.org</div>
                 </div>
               </a>
             </div>
