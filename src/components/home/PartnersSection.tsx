@@ -2,6 +2,8 @@ import Image from 'next/image';
 import styles from './PartnersSection.module.css';
 
 const partners = [
+  { name: "Ministère de l'Économie Numérique et de la Communication — Bénin", file: 'partner-ministere-economie-numerique-benin.png' },
+  { name: 'EEBTP',                              file: 'partner-eebtp.png' },
   { name: 'Cotonou Accueil',                    file: 'partner-cotonou-accueil.jpg' },
   { name: 'Yélian',                              file: 'partner-yelian.png' },
   { name: 'Travel Consulting Agency',            file: 'partner-travel-consulting-agency.png' },
@@ -27,7 +29,7 @@ const partners = [
   { name: 'Baby Premium',                        file: 'Logo baby premium sans fond.png' },
   { name: 'MAJ Services',                        file: 'Logo MAJ SERVICES SANS FOND (1).png' },
   { name: 'CAO Consulting',                      file: 'Logo fond transparent.png' },
-  { name: 'A&S Consulting',                      file: 'partner-as-consulting.svg' },
+  { name: 'A&S Consulting',                      file: 'partner-as-consulting.png' },
 ];
 
 export default function PartnersSection() {

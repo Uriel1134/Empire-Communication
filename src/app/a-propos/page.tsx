@@ -58,14 +58,14 @@ export default function AProposPage() {
                 <div className={styles.founderPhotoWrap}>
                   <Image
                     src="/images/founder-dine-moustapha-ceo.png"
-                    alt="Dine Moustapha, Président Directeur Général d'Empire Communication"
+                    alt="Mr DINE MOUSTAPHA, Président Directeur Général d'Empire Communication"
                     fill
                     sizes="280px"
                     className={styles.founderPhoto}
                   />
                 </div>
                 <div className={styles.founderInfo}>
-                  <div className={styles.founderName}>Dine Moustapha</div>
+                  <div className={styles.founderName}>Mr DINE MOUSTAPHA</div>
                   <div className={styles.founderRole}>Président Directeur Général</div>
                   <div className={styles.founderTagline}>Expert en Communication digitale et consultant en SEO</div>
                 </div>
