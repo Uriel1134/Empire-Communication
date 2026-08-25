@@ -25,7 +25,7 @@ const agencies = [
     address: 'Centre-ville, Cotonou',
     phone: '+229 01 51 78 33 29',
     whatsapp: '2290151783329',
-    email: 'direction@empirecommunication.org',
+    email: 'cotonou@empirecommunication.org',
     hours: 'Lun–Sam : 8h–18h (GMT+1)',
     mapsUrl: 'https://maps.google.com/?q=Cotonou+Centre+Benin',
   },
