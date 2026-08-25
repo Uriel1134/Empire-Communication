@@ -13,7 +13,7 @@ const agencies = [
     address: 'Carrefour Béninois, Libreville',
     phone: '+241 074 829 240',
     whatsapp: '241074829240',
-    email: 'libreville@empirecommunications.org',
+    email: 'libreville@empirecommunication.org',
     hours: 'Lun–Sam : 8h–18h (GMT+1)',
     mapsUrl: 'https://maps.google.com/?q=Carrefour+Beninois+Libreville+Gabon',
   },
@@ -25,7 +25,7 @@ const agencies = [
     address: 'Centre-ville, Cotonou',
     phone: '+229 01 51 78 33 29',
     whatsapp: '2290151783329',
-    email: 'direction@empirecommunications.org',
+    email: 'direction@empirecommunication.org',
     hours: 'Lun–Sam : 8h–18h (GMT+1)',
     mapsUrl: 'https://maps.google.com/?q=Cotonou+Centre+Benin',
   },
@@ -131,8 +131,8 @@ export default function ContactPage() {
                 <Mail size={24} className={styles.emailIcon} />
                 <div>
                   <div className={styles.emailLabel}>Email général</div>
-                  <a href="mailto:direction@empirecommunications.org" className={styles.emailValue}>
-                    direction@empirecommunications.org
+                  <a href="mailto:direction@empirecommunication.org" className={styles.emailValue}>
+                    direction@empirecommunication.org
                   </a>
                 </div>
               </div>
